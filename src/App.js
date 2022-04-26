@@ -1,10 +1,16 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import GlobalStyles from './Components/styles/globalStyles';
 
 function App() {
   return (
-    <div>
-      App Placeholder
-    </div>
+    <>
+      <GlobalStyles />
+      <Routes>
+        <Route path="/" />
+        <Route path="search" />
+      </Routes>
+    </>
   );
 }
 
