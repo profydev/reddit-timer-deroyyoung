@@ -6,13 +6,15 @@ import Navigation from '../Navigation/Navigation';
 
 export default function Header() {
   return (
-    <Navbar style={{ marginTop: '18px' }}>
-      <Container>
-        <Navbar.Brand as={Link} to="/">
-          <HeaderLogo />
-        </Navbar.Brand>
-        <Navigation />
-      </Container>
-    </Navbar>
+    <header>
+      <Navbar style={{ marginTop: '18px' }}>
+        <Container>
+          <Navbar.Brand as={Link} to="/">
+            <HeaderLogo />
+          </Navbar.Brand>
+          <Navigation />
+        </Container>
+      </Navbar>
+    </header>
   );
 }
