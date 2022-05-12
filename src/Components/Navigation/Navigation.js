@@ -12,17 +12,18 @@ const StyledNavLink = styled(Nav.Link)`
     color: ${({ theme }) => theme.lightBlack};
     font: 1rem ${({ theme }) => theme.primaryFont};
     font-weight: 400;
+    padding-left: 18px;
   }
 `;
 
 export default function Navigation() {
   return (
-    <Nav>
+    <Nav style={{ marginLeft: '5px' }}>
       <StyledLink to="/search">
         <StyledNavLink>Search</StyledNavLink>
       </StyledLink>
       <StyledLink to="#how-it-works">
-        <StyledNavLink>How it Works</StyledNavLink>
+        <StyledNavLink>How it works</StyledNavLink>
       </StyledLink>
       <StyledLink to="#about">
         <StyledNavLink>About</StyledNavLink>
