@@ -1,15 +1,20 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Container, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import HeaderLogo from '../HeaderLogo/HeaderLogo';
+import Navigation from '../Navigation/Navigation';
 
 export default function Header() {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <HeaderLogo />
-        </Col>
-      </Row>
-    </Container>
+    <Navbar>
+      <Container>
+        <Navbar.Brand>
+          <Link to="/">
+            <HeaderLogo />
+          </Link>
+        </Navbar.Brand>
+        <Navigation />
+      </Container>
+    </Navbar>
   );
 }
