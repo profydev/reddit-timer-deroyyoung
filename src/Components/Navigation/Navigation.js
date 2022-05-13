@@ -19,7 +19,7 @@ const StyledNavLink = styled(Nav.Link)`
 export default function Navigation() {
   return (
     <Nav style={{ marginLeft: '5px' }}>
-      <StyledLink to="/search">
+      <StyledLink to="/search/javascript">
         <StyledNavLink>Search</StyledNavLink>
       </StyledLink>
       <StyledLink to="#how-it-works">
