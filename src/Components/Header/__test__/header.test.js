@@ -19,5 +19,29 @@ describe('Header', () => {
     expect(screen.getByRole('heading', { name: /home/i })).toBeInTheDocument();
   });
 
-  it()
+  it('Search link directs to search page with javascript as default', () => {
+    render(<MockHeader />);
+
+    const searchLink = screen.getByRole('link', { name: /search/i });
+
+    userEvent.click(searchLink);
+  });
+
+  it('About link', () => {
+    render(<MockHeader />);
+
+    const aboutLink = screen.getByRole('link', { name: /about/i });
+
+    expect(aboutLink);
+    screen.debug();
+  });
+
+  it('How it works link', () => {
+    render(<MockHeader />);
+
+    const howItWorksLink = screen.getByRole('link', { name: /how it works/i });
+
+    expect(howItWorksLink);
+    screen.debug();
+  });
 });
