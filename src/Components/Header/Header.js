@@ -1,9 +1,19 @@
 import React from 'react';
+import { Container, Navbar } from 'react-bootstrap';
+import HeaderLogo from './HeaderLogo';
+import Navigation from './Navigation';
 
 export default function Header() {
   return (
-    <div>
-      <h1>Header</h1>
-    </div>
+    <header>
+      <Navbar style={{ marginTop: '18px' }}>
+        <Container>
+          <Navbar.Brand>
+            <HeaderLogo />
+          </Navbar.Brand>
+          <Navigation />
+        </Container>
+      </Navbar>
+    </header>
   );
 }

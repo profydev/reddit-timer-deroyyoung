@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
     border: 0;
     font-size: 100%;
     font: inherit;
-    font-family: Bitter, Montserrat;
+    font-family: Bitter, Montserrat, sans-serif;
     }
 
     *,
