@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Navbar } from 'react-bootstrap';
-import HeaderLogo from '../HeaderLogo/HeaderLogo';
-import Navigation from '../Navigation/Navigation';
+import HeaderLogo from './HeaderLogo';
+import Navigation from './Navigation';
 
 export default function Header() {
   return (

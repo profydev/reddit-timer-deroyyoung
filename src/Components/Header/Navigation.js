@@ -16,9 +16,15 @@ const StyledNavLink = styled(Nav.Link)`
 export default function Navigation() {
   return (
     <Nav style={{ marginLeft: '5px' }}>
-      <StyledNavLink as={Link} to="/search/javascript">Search</StyledNavLink>
-      <StyledNavLink as={Link} to="#how-it-works">How it works</StyledNavLink>
-      <StyledNavLink as={Link} to="#about">About</StyledNavLink>
+      <StyledNavLink as={Link} to="/search/javascript">
+        Search
+      </StyledNavLink>
+      <StyledNavLink as={Link} to="/#how-it-works">
+        How it works
+      </StyledNavLink>
+      <StyledNavLink as={Link} to="/#about">
+        About
+      </StyledNavLink>
     </Nav>
   );
 }

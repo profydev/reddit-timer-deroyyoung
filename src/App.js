@@ -18,14 +18,12 @@ const theme = {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <>
-        <GlobalStyles />
-        <Header />
-        <Routes>
-          <Route path="/search" element={<Search />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </>
+      <GlobalStyles />
+      <Header />
+      <Routes>
+        <Route path="/search" element={<Search />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
     </ThemeProvider>
   );
 }
