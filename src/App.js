@@ -5,6 +5,7 @@ import GlobalStyles from './globalStyles';
 import Header from './Components/Header/Header';
 import Search from './pages/SearchPage.js/Search';
 import Home from './Components/Home/Home';
+import Footer from './Components/Footer/Footer';
 
 const theme = {
   primaryFont: 'Montserrat',
@@ -24,6 +25,7 @@ function App() {
         <Route path="/search" element={<Search />} />
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </ThemeProvider>
   );
 }
