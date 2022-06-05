@@ -27,7 +27,7 @@ export default function Footer() {
       <Container>
         <li>
           <StyledLink
-            href="https://ooloo.io/employers"
+            href="https://profy.dev/employers"
             target="_blank"
             rel="noreferrer"
           >

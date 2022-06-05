@@ -52,6 +52,6 @@ describe('Footer', () => {
     setup();
     const profyLink = screen.getByRole('link', { name: /profy/i });
 
-    expect(profyLink).toHaveAttribute('href', 'https://ooloo.io/employers');
+    expect(profyLink).toHaveAttribute('href', 'https://profy.dev/employers');
   });
 });
