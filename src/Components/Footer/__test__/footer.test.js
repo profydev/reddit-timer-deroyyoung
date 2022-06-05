@@ -47,4 +47,11 @@ describe('Footer', () => {
 
     expect(history.location.pathname).toEqual('/terms');
   });
+
+  it('profy.dev link has the correct value', () => {
+    setup();
+    const profyLink = screen.getByRole('link', { name: /profy/i });
+
+    expect(profyLink).toHaveAttribute('href', 'https://ooloo.io/employers');
+  });
 });
